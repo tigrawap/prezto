@@ -43,6 +43,13 @@ zstyle ':prezto:load' pmodule \
   'history-substring-search'
 
 #
+# Autosuggestions
+#
+
+# Set the query found color.
+# zstyle ':prezto:module:autosuggestions:color' found ''
+
+#
 # Editor
 #
 
@@ -130,6 +137,7 @@ zstyle ':prezto:module:prompt' theme 'tigra'
    'brackets' \
    'pattern' \
    'cursor' \
+   'line' \
    'root'
 
 # Set syntax highlighting styles.
