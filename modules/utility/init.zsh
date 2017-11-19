@@ -185,9 +185,9 @@ function popdls {
 }
 
 # Prints columns 1 2 3 ... n.
-function slit {
-  awk "{ print ${(j:,:):-\$${^@}} }"
-}
+#function slit {
+#  awk "{ print ${(j:,:):-\$${^@}} }"
+#}
 
 # Finds files and executes a command on them.
 function find-exec {

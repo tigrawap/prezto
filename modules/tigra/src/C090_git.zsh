@@ -21,3 +21,6 @@ function gcd(){
     fi
 }
 
+ggb() {
+    git grep -n $1 | while IFS=: read i j k; do echo "$i:$j" `git blame -L $j,$j $i`; done
+}
