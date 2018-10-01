@@ -181,12 +181,10 @@ zstyle ':prezto:module:prompt' theme 'tigra'
    'root'
 
 # Set syntax highlighting styles.
-<<<<<<< HEAD
  zstyle ':prezto:module:syntax-highlighting' styles \
    'builtin' 'bg=blue' \
    'command' 'bg=blue' \
    'function' 'bg=blue'
-=======
 # zstyle ':prezto:module:syntax-highlighting' styles \
 #   'builtin' 'bg=blue' \
 #   'command' 'bg=blue' \
