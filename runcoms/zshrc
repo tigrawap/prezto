@@ -16,6 +16,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 export WEKAPP_PATH=$WEKA
 export WEKA_TEKA_COMMAND=./teka.py
-export WEKA_PAGER="slit --debug"
+export WEKA_PAGER="slit --debug --always-term"
 export PAGER=slit
+export WEKA_NO_PATCHING_WARNINGS=1
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"

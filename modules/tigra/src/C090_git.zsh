@@ -9,7 +9,7 @@ function gcd(){
             cd .
         else
             reponame=`git remote -v | grep origin | head -n1 | awk '{print $2}' | sed -n 's/.*\/\(.*\).git/\1/p'`
-            noslashname=`echo $@ | sed -n 's/[\/\.]/-/pg'`
+            noslashname=`echo $@ | sed 's/[\/\.]/-/g'`
             gcd_target_dir="../$reponame-$noslashname"
             if git worktree add $gcd_target_dir $@ ; then
                 cd "$gcd_target_dir"
